@@ -3,14 +3,15 @@
 }
 
 .header {
-    background-color: #F1F1F1;
+    background-color: rgba(255, 255, 255, 0.995);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    color: rgb(0, 174, 255);
 }
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: rgb(176, 173, 173);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,14 +20,14 @@
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #000000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(232, 77, 77);
     color: black;
 }
 
@@ -37,17 +38,46 @@
 }
 
 .body{
-    
+    /* background-color: rgb(12, 209, 249); */
     align-content: center;
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 600px;
+    height:580px;
 }
 
 .mycard{
-    background-color: rgb(209, 241, 230);
-    height: 300px;
-    width: 300px;
+    height: 450px;
+    width: 400px;
     border-radius: 2%;
+    position:relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.cardTitle{
+    color: #ddd;
+    padding: 5%;
+    text-align: center;
+}
+
+.cardDescription{
+    font-family: Verdana, Arial, Tahoma, Serif;
+    font-size: x-small;   
+    padding: 5%;
+    color: white;
+    text-align: justify;
+    position:absolute;
+    bottom:0;
+}
+
+.cardSign{
+    color: white;
+    text-align: right;
+    padding-right: 10%;
+    font-size: medium;
+    
+}
+
+.mycard:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
 }

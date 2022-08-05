@@ -1,5 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css'
+import image1 from './resources/img1.jpg'
+import image2 from './resources/img2.jpg'
+import image3 from './resources/img3.jpg'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faCheckSquare, faCoffee)
+
+
 
 const data = [
     {
@@ -21,9 +32,21 @@ const data = [
 ]
 
 function Card(){
-    
+    const imageBackground = {
+        backgroundImage : `url(${image3})`
+    }
     return(
-        <div className='mycard'>
+        <div 
+            className='mycard'
+            style = {imageBackground}>
+            <h1 className='cardTitle'>Card 1</h1>
+            <div className='cardDescription'>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </p>
+                <p className='cardSign'>Card 1</p>
+            </div>
+            
             
         </div>
     )
@@ -48,7 +71,8 @@ function Footer(){
 function Header() {
     return (
         <div className="header">
-            Salesforce
+            <FontAwesomeIcon icon="fab fa-salesforce" size="5x"/>
+            
         </div>
     );
 }
@@ -56,9 +80,9 @@ function Header() {
 function Topnav(){
     return(
         <div className='topnav'>
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="#">Card 1</a>
+            <a href="#">Card 2</a>
+            <a href="#">Card 3</a>
         </div>
     );
 }
