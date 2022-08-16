@@ -1,6 +1,6 @@
 
 import { getCards } from '../data'
-import '../style/styles.css'
+// import '../style/styles.css'
 
 import { Outlet, NavLink } from 'react-router-dom'
 

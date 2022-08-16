@@ -1,41 +1,41 @@
-.navbar{
+/* .navbar{
     background-color: rgb(6, 1, 1);
-}
+} */
 
-.header {
+/* .header {
     background-color: rgba(255, 255, 255, 0.995);
     text-align: center;
     padding: 10px;
     color: rgb(0, 174, 255);
-}
+} */
 
-.nav {
+/* .nav {
     overflow: hidden;
     background-color: rgb(176, 173, 173);
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.nav a {
+/* .nav a {
     float: left;
     display: block;
     color: #000000;
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
-}
+} */
 
-.nav a:hover {
+/* .nav a:hover {
     background-color: rgb(232, 77, 77);
     color: black;
-}
+} */
 
-.footer {
+/* .footer {
     background-color: #F1F1F1;
     text-align: center;
     padding: 10px;
-}
+} */
 
 .body{
     /* background-color: rgb(12, 209, 249); */

@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import Card from './routes/card'
 import Cards from './routes/cards'
-
+import 'typeface-quicksand';
 import {
 	// Link,
 	BrowserRouter,
